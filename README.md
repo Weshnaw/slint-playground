@@ -11,7 +11,7 @@ use std/util "path add"
 path add ($env.ANDROID_HOME | path join "cmdline-tools/bin")
 ```
 
-```
+```nu
 sudo apt install lldb llvm clang openjdk-17-jdk-headless pkg-config libssl-dev unzip build-essential android-tools-adb
 mkdir android-sdk
 wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
