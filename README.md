@@ -1,4 +1,8 @@
-# Install
+# Windows
+`cargo run -p playground-windows`
+
+# Android
+## Install
 ```nu
 $env.ANDROID_HOME = "/home/bfall/android-sdk"
 $env.NDK_HOME = (ls ($env.ANDROID_HOME | path join "ndk" ) | sort-by name --reverse | get name.0)
@@ -15,8 +19,8 @@ path add ($env.ANDROID_HOME | path join "cmdline-tools/bin")
 `sdkmanager "build-tools" "ndk" "platforms"`
 `cargo binstall xbuild`
 
-# Check
+## Check
 `x doctor`
 
-# Build 
-`x build --format apk --platform android --arch arm64 -p android`
+## Build 
+`x build --format apk --platform android --arch arm64 -p playground-android`
