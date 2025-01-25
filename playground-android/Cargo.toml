@@ -1,0 +1,17 @@
+[package]
+name = "playground-android"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+slint = { workspace = true, features = ["backend-android-activity-06"] }
+playground-shared = { workspace = true }
+
+[build-dependencies]
+slint-build = { workspace = true }
+
+# 

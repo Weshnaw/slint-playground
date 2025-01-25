@@ -1,0 +1,12 @@
+[package]
+name = "playground-windows"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+slint = { workspace = true }
+playground-shared = { workspace = true }
+
+[build-dependencies]
+slint-build = { workspace = true }

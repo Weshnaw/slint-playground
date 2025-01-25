@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "playground-android", "playground-shared", "playground-windows",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.1"
+authors = ["Brendon Fallquist"]
+edition = "2021"
+
+
+[workspace.dependencies]
+slint = "1.8"
+playground-shared = { path = "playground-shared" }
+slint-build = "1.8"
